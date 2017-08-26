@@ -1,0 +1,15 @@
+#!/bin/sh
+
+#Grab user name:
+echo "user: "
+read USER
+
+#Grab password:
+echo "pass: "
+read PWD
+
+if [ "$USER" == "test" ] && [ "$PWD" == "test123" ]; then
+	echo "Login Success!"
+else
+	echo "Login Failed!"
+fi
