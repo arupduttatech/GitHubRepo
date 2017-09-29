@@ -1,0 +1,16 @@
+stage "unit test"
+
+node {
+      echo "unit test app"
+}
+
+stage "test on supported OSes"
+
+parallel (
+  windows: { node {
+    echo "building on windows now"
+
+ }},
+  windows: { node {
+    echo "building on windows now"
+ }}
