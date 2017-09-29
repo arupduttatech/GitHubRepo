@@ -1,24 +1,24 @@
 pipeline {
  agent any
- 
-stages {
-   stage ('compile stage') { 
-   steps {
-    echo 'Hello World' {
+    stages {
+       stage ('compile stage') { 
+          steps 
+          { with Java  {
+             echo 'Hello World' 
     }
    }
 }
 stages {
    stage ('test stage') { 
-   steps {
-    echo 'Hello World' {
+   steps { with Java{
+    echo 'Hello World' 
     }
    }
 }
 stages {
    stage ('deploy stage') { 
-   steps {
-    echo 'Hello World' {
+   steps { with Java {
+    echo 'Hello World' 
     }
    }
 }
