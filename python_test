@@ -1,0 +1,3 @@
+#!/bin/sh
+python <absolute_path_of_python_script>.py
+hello "Pyhton"
